@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:elevation="4dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/button_border">
+
+    <TextView
+        android:id="@+id/history_item_gameName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Game 1"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/history_item_gamePoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Points"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/history_item_gameDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"/>
+</LinearLayout>

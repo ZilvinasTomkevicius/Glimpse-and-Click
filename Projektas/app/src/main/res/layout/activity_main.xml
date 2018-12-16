@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="lt.ziltom.zilvinastomkevicius.projektas.Activities.MainActivity"
+    android:background="#fff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Glimpse and click"
+        android:textSize="40sp"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:fontFamily="cursive"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/game_enter"
+        android:text="Enter game"
+        android:onClick="intentToGame"
+        style="@style/Main_button_appearence"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/results_history"
+        android:text="Show history"
+        android:onClick="intentToHistory"
+        style="@style/Main_button_appearence" />
+
+    <Button
+        android:id="@+id/game_about"
+        android:text="about"
+        android:onClick="intentToAbout"
+        style="@style/Main_button_appearence" />
+
+    <Button
+        android:id="@+id/app_exit"
+        android:text="exit"
+        android:onClick="exitApp"
+        style="@style/Main_button_appearence" />
+</LinearLayout>

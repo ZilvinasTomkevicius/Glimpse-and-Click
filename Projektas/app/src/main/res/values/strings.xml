@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Glimpse and Click</string>
+    <string name="about">When you enter the game a row of randomly generated numbers from 1 to 6 appears.
+    You have to try to remember it until the given time is over and click the buttons in the same order. The amount of numbers
+        in the row increases and more time is given as you advance. If you fail - you start over from the beginning.
+    </string>
+</resources>

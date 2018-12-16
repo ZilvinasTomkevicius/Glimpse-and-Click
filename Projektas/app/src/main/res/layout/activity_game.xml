@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lt.ziltom.zilvinastomkevicius.projektas.Activities.GameActivity"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Glimpse and click"
+            android:textSize="40sp"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="cursive"
+            android:textColor="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_1"
+                android:onClick="button1Click"
+                android:text="1"
+                style="@style/Game_button_appearence"/>
+
+            <Button
+                android:id="@+id/button_2"
+                android:onClick="button2Click"
+                android:text="2"
+                style="@style/Game_button_appearence"/>
+
+            <Button
+                android:id="@+id/button_3"
+                android:onClick="button3Click"
+                android:text="3"
+                style="@style/Game_button_appearence"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_4"
+                android:onClick="button4Click"
+                android:text="4"
+                style="@style/Game_button_appearence"/>
+
+            <Button
+                android:id="@+id/button_5"
+                android:onClick="button5Click"
+                android:text="5"
+                style="@style/Game_button_appearence"/>
+
+            <Button
+                android:id="@+id/button_6"
+                android:onClick="button6Click"
+                android:text="6"
+                style="@style/Game_button_appearence"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:background="@drawable/text_view_border"
+            android:id="@+id/clickRow_textView"
+
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="row"
+            android:padding="5dp"
+            android:textSize="23sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:elevation="2dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:background="@drawable/text_view_border"
+            android:id="@+id/playerClicks_textView"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="playerClicks"
+            android:textSize="23sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:elevation="2dp"
+            android:textAlignment="center"
+            android:padding="5dp"/>
+
+        <Button
+            android:onClick="setStartOver_NextLevelButtonClick"
+            android:id="@+id/button_startOver"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="start over"/>
+
+        <Button
+            android:onClick="setExitButtonClick"
+            android:id="@+id/game_exit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="exit game"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_countDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CountDown"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</RelativeLayout>
